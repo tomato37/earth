@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>충렬여고 1학년 1반 블로그</title>
+  <style>
+    /* =================== 기본 세팅 =================== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Noto Sans KR", sans-serif;
+      color: #333;
+      background-color: #fafafa;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3 {
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 0 auto 20px;
+      font-size: 1.05rem;
+      color: #444;
+    }
+
+    /* =================== 네비게이션 =================== */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    header h1 {
+      font-size: 1.3rem;
+      color: #0077b6;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #0077b6;
+    }
+
+    /* =================== 섹션 공통 =================== */
+    section {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px;
+      transition: all 0.8s ease;
+    }
+
+    section:nth-child(even) {
+      background-color: #f1f5f9;
+    }
+
+    section h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: #0077b6;
+    }
+
+    /* =================== 후원/문의 섹션 =================== */
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .contact input, .contact textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .contact button {
+      background-color: #0077b6;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contact button:hover {
+      background-color: #005f87;
+    }
+
+    /* =================== 푸터 =================== */
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      font-size: 0.9rem;
+      background-color: #222;
+      color: #fff;
+    }
+
+    /* =================== 스크롤 애니메이션 =================== */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>충렬여고 1학년 1반 블로그</h1>
+    <nav>
+      <a href="#intro">소개</a>
+      <a href="#activities">핵심활동</a>
+      <a href="#campaign">캠페인참여</a>
+      <a href="#news">뉴스 / 스토리</a>
+      <a href="#contact">후원 / 문의</a>
+    </nav>
+  </header>
+
+  <!-- 소개 섹션 -->
+  <section id="intro" class="fade-in">
+    <h2>소개</h2>
+    <p>충렬여고 1학년 1반의 블로그에 오신 것을 환영합니다.  
+       이곳은 우리 반의 다양한 활동과 이야기를 공유하는 공간입니다.  
+       함께 배우고, 성장하고, 나누는 시간을 함께 해요!</p>
+  </section>
+
+  <!-- 핵심활동 섹션 -->
+  <section id="activities" class="fade-in">
+    <h2>핵심활동</h2>
+    <p>우리 반은 학급 단합, 환경 캠페인, 독서 프로젝트 등 다양한 활동을 진행합니다.  
+       모두가 참여하고 즐길 수 있는 활동을 통해 협동심과 창의력을 키우고 있습니다.</p>
+  </section>
+
+  <!-- 캠페인참여 섹션 -->
+  <section id="campaign" class="fade-in">
+    <h2>캠페인참여</h2>
+    <p>학교 안팎에서 진행되는 캠페인에 적극적으로 참여하고 있습니다.  
+       작은 행동이 큰 변화를 만든다는 믿음으로, 더 나은 세상을 위해 함께 움직입니다.</p>
+  </section>
+
+  <!-- 뉴스 / 스토리 섹션 -->
+  <section id="news" class="fade-in">
+    <h2>
